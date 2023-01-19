@@ -14,7 +14,8 @@ const deleteUser = async (userId) => {
   axios
     .delete(`http://localhost:7000/user/${userId}`)
     .then((res) => console.log(res))
-    .catch((err) => console.log(err));    
+    .catch((err) => console.log(err)); 
+  window.location.reload();   
 };
 
 const createUser = async (newUser) => {
